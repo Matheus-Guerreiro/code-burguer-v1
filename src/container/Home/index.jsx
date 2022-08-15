@@ -25,7 +25,7 @@ function App() {
 
   async function addNewOrder() {
     const { data: newOrder } = await Axios.post(
-      `http://localhost:3001/orders`,
+      `https://back-burguer.netlify.app/orders`,
       {
         order: inputOrder.current.value,
         clientName: inputName.current.value,

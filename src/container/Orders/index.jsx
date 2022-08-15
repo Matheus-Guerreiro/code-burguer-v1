@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     async function fetchOrders() {
-      const { data: newOrders } = await Axios.get("http://localhost:3001/orders" );
+      const { data: newOrders } = await Axios.get("https://back-burguer.netlify.app/orders" );
 
       setOrders(newOrders);
     }
@@ -31,7 +31,7 @@ function App() {
 
 
   async function deleteOrder (orderId) {
-    await Axios.delete(`http://localhost:3001/orders/${orderId}`);
+    await Axios.delete(`https://back-burguer.netlify.app/orders/${orderId}`);
 
     const newOrders = orders.filter((order) => order.id !== orderId);
 
