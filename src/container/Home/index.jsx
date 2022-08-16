@@ -25,7 +25,7 @@ function App() {
 
   async function addNewOrder() {
     const { data: newOrder } = await Axios.post(
-      `https://back-burguer.netlify.app/orders`,
+      `https://backend-burguer.herokuapp.com/orders`,
       {
         order: inputOrder.current.value,
         clientName: inputName.current.value,
