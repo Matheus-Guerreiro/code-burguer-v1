@@ -50,7 +50,7 @@ function App() {
         <Input ref={inputName} placeholder="Nome" />
 
           <Button onClick={addNewOrder}>
-            Novo pedido
+           Fazer pedido
           </Button>
       </ContainerItems>
     </Container>
